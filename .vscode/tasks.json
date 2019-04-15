@@ -1,0 +1,51 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false,
+    },
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": ".vscode/build.sh $(wslpath '${fileDirname}') all",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher":"$gcc"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command" :".vscode/build.sh $(wslpath '${fileDirname}') run",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "compile for C++",
+            "command": "make",
+            "type": "shell",
+            "args": [
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "execute",
+            "type": "shell",
+            "command": "cd ${fileDirname} && ./${workspaceFolderbasenmae}",
+            "group": "test"
+        }
+    ]
+}

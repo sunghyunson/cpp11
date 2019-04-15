@@ -1,0 +1,11 @@
+{
+	"files.associations": {
+		"*.txt": "log",
+		"iostream": "cpp",
+		"thread": "cpp",
+		"mutex": "cpp",
+		"chrono": "cpp",
+		"type_traits": "cpp"
+	},
+	"editor.formatOnSave": true
+}
