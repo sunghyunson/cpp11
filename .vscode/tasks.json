@@ -14,7 +14,8 @@
         {
             "label": "build",
             "type": "shell",
-            "command": ".vscode/build.sh $(wslpath '${fileDirname}') all",
+            //"command": ".vscode/build.sh $(wslpath '${fileDirname}') all",
+            "command": ".vscode/build.sh $(wslpath '${fileDirname}') run",
             "group": {
                 "kind": "build",
                 "isDefault": true

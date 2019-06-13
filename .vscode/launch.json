@@ -8,10 +8,12 @@
 			"name": "(gdb) Launch",
 			"type": "cppdbg",
 			"request": "launch",
-			"program": "/mnt/d/source/cplusplus/justtest/hello",
-			"args": ["-fThreading"],
+			"program": "/mnt/d/source/cpp11/containers/ContainerTest",
+			"args": [
+				"-fThreading"
+			],
 			"stopAtEntry": false,
-			"cwd": "/mnt/d/source/cplusplus/justtest",
+			"cwd": "/mnt/d/source/cpp11/containers",
 			"environment": [],
 			"externalConsole": true,
 			"windows": {
@@ -28,7 +30,9 @@
 			"pipeTransport": {
 				"pipeCwd": "",
 				"pipeProgram": "c:\\windows\\sysnative\\bash.exe",
-				"pipeArgs": ["-c"],
+				"pipeArgs": [
+					"-c"
+				],
 				"debuggerPath": "/usr/bin/gdb"
 			},
 			"sourceFileMap": {
