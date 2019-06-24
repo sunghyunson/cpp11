@@ -53,15 +53,19 @@ void trait_is_same() {
 	cout << "is_same<int, int64_t>() " << is_same<int, int64_t>() << '\n';
 }
 
+extern void forTrait();
+
 int main() {
 	cout << "trait " << endl;
-	print_separator("is_void");
-	trait_is_void();
-	print_separator("is_nullptr");
-	trait_is_nullptr();
-	print_separator("is_integral");
-	trait_is_integral();
-	print_separator("is_same");
-	trait_is_same();
+	// print_separator("is_void");
+	// trait_is_void();
+	// print_separator("is_nullptr");
+	// trait_is_nullptr();
+	// print_separator("is_integral");
+	// trait_is_integral();
+	// print_separator("is_same");
+	// trait_is_same();
+
+	forTrait();
 	return 0;
 }

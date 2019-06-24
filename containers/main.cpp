@@ -6,6 +6,7 @@ extern void array_test();
 extern void vector_test();
 extern void vector_alloc();
 extern void forword_test();
+extern void settest();
 
 void print_separator(string str) { cout << "------" << str.c_str() << "------\n"; }
 
@@ -55,4 +56,6 @@ int main() {
 	string name3 = aa;
 	name3[0] = 'z';
 	cout << name3 << endl;
+
+	settest();
 }

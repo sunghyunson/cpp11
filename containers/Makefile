@@ -1,6 +1,6 @@
 
 SRCS_CPP_FILE = main.cpp array.cpp vector.cpp \
-				forword_list.cpp
+				forword_list.cpp settest.cpp
 TARGET = ContainerTest
 
 

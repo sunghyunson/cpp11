@@ -2,7 +2,7 @@
 # SRCS_C_FILE = chello.c \
 # good.c
 
-SRCS_CPP_FILE = trait.cpp
+SRCS_CPP_FILE = trait.cpp typetrate.cpp
 TARGET = trait
 
 
