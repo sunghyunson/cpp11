@@ -32,7 +32,7 @@ int main() {
 	async();
 	future();
 	// conditionVariable();
-	// race_condition();
+	race_condition();
 
 	// Fctor fct;
 	// string s = "Where there is no trust, there is no love";
