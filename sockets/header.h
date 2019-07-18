@@ -9,7 +9,6 @@
 #include <time.h>
 #include <unistd.h>
 #include <iostream>
-
 #define PORT 10000
 #define BUFFER_LEN 100
 #define CHAT_SIZE 1024

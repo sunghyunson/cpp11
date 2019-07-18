@@ -2,11 +2,9 @@
 # SRCS_C_FILE = chello.c \
 # good.c
 
-SRCS_CPP_FILE = thread11.cpp
-TARGET = 11threadTest
+SRCS_CPP_FILE = lockAndCall.cpp
+TARGET = locakAndCall
 
-SRCS_CPP_FILE = thread.cpp
-TARGET = threadTest
 
 
 CXX = g++
