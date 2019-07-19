@@ -20,6 +20,11 @@ TARGET = checked_delete
 SRCS_CPP_FILE = decltype.cpp
 TARGET = decltype
 
+SRCS_CPP_FILE = max.cpp
+TARGET = max
+
+
+
 CXX = g++
 # CXXFLAGS = -Wall -Werror -Wextra -pedantic -std=c++17 -g -fsanitize=address
 CXXFLAGS = -Wall -Wextra -pedantic -std=c++17 -g -fsanitize=address

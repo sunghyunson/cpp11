@@ -5,6 +5,8 @@
 SRCS_CPP_FILE = base.cpp
 TARGET = base
 
+SRCS_CPP_FILE = share_future.cpp
+TARGET = share_future
 
 
 CXX = g++
