@@ -6,26 +6,35 @@
 
 using namespace std;
 
-namespace ranges {
+namespace ranges
+{
 template <typename Range, typename Generator>
-void generate(Range& range, Generator generator) {
+void generate(Range& range, Generator generator)
+{
 	return std::generate(begin(range), end(range), generator);
 }
 } // namespace ranges
 
 
 
-class RandomNumberBetween {
+class RandomNumberBetween
+{
 public:
-	RandomNumberBetween(int low, int high) : m_random_engine(random_device{}()), m_distribution(low, high) {}
-	int operator()() { return m_distribution(m_random_engine); }
+	RandomNumberBetween(int low, int high) : m_random_engine(random_device{}()), m_distribution(low, high)
+	{
+	}
+	int operator()()
+	{
+		return m_distribution(m_random_engine);
+	}
 
 private:
 	mt19937 m_random_engine;
 	uniform_int_distribution<int> m_distribution;
 };
 
-int main() {
+int main()
+{
 	// random_device first_random_device;
 
 	// mt19937 random_engine(first_random_device());
@@ -35,7 +44,8 @@ int main() {
 	// uniform_real_distribution<double> distribution(0, 10.01);
 
 	auto randomGenerator = std::bind(distribution, random_engine);
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 10; i++)
+	{
 		// auto const randNumber = distribution(random_engine);
 		// cout << randNumber << endl;
 		cout << randomGenerator() << ' ';

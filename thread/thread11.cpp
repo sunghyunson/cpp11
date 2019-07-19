@@ -12,7 +12,7 @@ mutex g_mutex;
 void counter(int id, int length)
 {
 	vector<int> vec = {1, 2, 3};
-	auto native = this_thread::get_id().native_handle();
+	// auto native = this_thread::get_id().native_handle();
 	for (int i = 0; i <= length; i++)
 	{
 		g_mutex.lock();
@@ -53,5 +53,6 @@ int main()
 	cout << "main sleep" << endl;
 	std::this_thread::sleep_for(chrono::seconds(1));
 	cout << "End of main" << endl;
+	
 	return 0;
 }

@@ -1,24 +1,14 @@
+SRCS_CPP_FILE = permutation.cpp
+TARGET = permutation
 
-# SRCS_C_FILE = chello.c \
-# good.c
+SRCS_CPP_FILE = transform.cpp
+TARGET = transform
 
-SRCS_CPP_FILE = lazy_init.cpp
-TARGET = lazy_init
+SRCS_CPP_FILE = fill.cpp
+TARGET = fill
 
-SRCS_CPP_FILE = range.cpp
-TARGET = range
-
-SRCS_CPP_FILE = variadic_template.cpp
-TARGET = variadic
-
-SRCS_CPP_FILE = xtuple.cpp
-TARGET = xtuple
-
-SRCS_CPP_FILE = checked_delete.cpp
-TARGET = checked_delete
-
-SRCS_CPP_FILE = decltype.cpp
-TARGET = decltype
+SRCS_CPP_FILE = minMax.cpp
+TARGET = minMax
 
 CXX = g++
 # CXXFLAGS = -Wall -Werror -Wextra -pedantic -std=c++17 -g -fsanitize=address

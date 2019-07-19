@@ -1,28 +1,11 @@
 
-# SRCS_C_FILE = chello.c \
-# good.c
+SRCS_CPP_FILE = create.cc
+TARGET = tcrate
 
-SRCS_CPP_FILE = lazy_init.cpp
-TARGET = lazy_init
-
-SRCS_CPP_FILE = range.cpp
-TARGET = range
-
-SRCS_CPP_FILE = variadic_template.cpp
-TARGET = variadic
-
-SRCS_CPP_FILE = xtuple.cpp
-TARGET = xtuple
-
-SRCS_CPP_FILE = checked_delete.cpp
-TARGET = checked_delete
-
-SRCS_CPP_FILE = decltype.cpp
-TARGET = decltype
 
 CXX = g++
 # CXXFLAGS = -Wall -Werror -Wextra -pedantic -std=c++17 -g -fsanitize=address
-CXXFLAGS = -Wall -Wextra -pedantic -std=c++17 -g -fsanitize=address
+CXXFLAGS = -Wall -Wextra -pedantic -std=c++11 -g -fsanitize=address
 LDFLAGS =  -fsanitize=address
 LIBS = -lpthread
 
