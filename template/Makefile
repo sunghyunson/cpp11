@@ -4,28 +4,8 @@
 
 TARGET = a.out
 
-SRCS_CPP_FILE = lazy_init.cpp
-TARGET = lazy_init
+SRCS_CPP_FILE = specialization.cpp
 
-SRCS_CPP_FILE = range.cpp
-TARGET = range
-
-SRCS_CPP_FILE = variadic_template.cpp
-TARGET = variadic
-
-SRCS_CPP_FILE = xtuple.cpp
-TARGET = xtuple
-
-SRCS_CPP_FILE = checked_delete.cpp
-TARGET = checked_delete
-
-SRCS_CPP_FILE = decltype.cpp
-TARGET = decltype
-
-SRCS_CPP_FILE = max.cpp
-TARGET = max
-
-TARGET = a.out
 
 CXX = g++
 # CXXFLAGS = -Wall -Werror -Wextra -pedantic -std=c++17 -g -fsanitize=address
